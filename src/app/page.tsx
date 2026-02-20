@@ -170,10 +170,7 @@ export default function Home() {
             </div>
             <div className="relative group">
                <div className="absolute -inset-4 bg-blue-600/20 rounded-[3rem] blur-2xl group-hover:bg-blue-600/30 transition-all" />
-               <img 
-                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60" 
-                 alt="Dashboard Preview" 
-                 className="relative rounded-[2rem] border border-white/10 shadow-2xl"
+               <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60" alt="Dashboard Preview"   className="relative rounded-[2rem] border border-white/10 shadow-2xl"
                />
             </div>
           </div>
