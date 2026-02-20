@@ -68,9 +68,7 @@ export default function Home() {
       >
         <div className="absolute top-20 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[120px] -z-10 animate-pulse" />
         
-        <motion.div {...fadeIn} className="inline-flex items-center gap-2 mb-8 px-4 py-2 text-xs font-black uppercase tracking-[0.2em] bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full">
-          <Sparkles className="w-3 h-3" /> Next-Gen Workflow
-        </motion.div>
+      
 
         <motion.h1 
           initial={{ opacity: 0, y: 40 }}
