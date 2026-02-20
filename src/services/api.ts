@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000", // your backend URL
+  baseURL: process.env.NEXT_PUBLIC_API_URL, // ✅ PROD SAFE
 });
 
 /* 🔐 Attach JWT to every request */
@@ -9,7 +9,6 @@ api.interceptors.request.use(
   (config) => {
     if (typeof window !== "undefined") {
       const token = localStorage.getItem("accessToken");
-
       if (token) {
         config.headers.Authorization = `Bearer ${token}`;
       }
